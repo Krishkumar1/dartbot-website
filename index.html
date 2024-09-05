@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DartBot: Overhand Throwing of Deformable Objects with Tactile Sensing and Reinforcement Learning.">
+  <meta name="keywords" content="DartBot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DartBot: Overhand Throwing of Deformable Objects with Tactile Sensing and Reinforcement Learning.</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">DartBot: Overhand Throwing of Deformable Objects with Tactile Sensing and Reinforcement Learning.</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=24vkt1oAAAAJ&hl=en">Shoaib Aslam</a><sup>*, 1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/krishkumar2004">Krish Kumar</a><sup>*, 1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Pokuang Zhou</a><sup>*, 1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://seng.hkust.edu.hk/about/people/faculty/hongyu-yu">Hongyu Yu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ece.hkust.edu.hk/mywang">Michael Yu Wang, Fellow, IEEE</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cerias.purdue.edu/site/people/faculty/view/3343">Yu She</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Authors of Equal Contribution</span>
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Purdue University</span>
+            <span class="author-block"><sup>2</sup>Hong Kong University of Science and Technology</span>
+            <span class="author-block"><sup>3</sup>Great Bay University</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/main.png"
+          class="interpolation-image"
+          alt="Dart in air demonstration"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">DartBot: </span> Framework that integrates tactile exploration
+        and reinforcement learning to achieve robust 
+        throwing skills for nonrigid objects.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Object transfer through throwing is a classic dynamic manipulation task that necessitates precise control and perception capabilities. 
+            However, developing dynamic models for unstructured environments using analytical methods presents challenges.
+          </p>
+          <p>
+            In this study, we present <span class="dnerf">DartBot</span>, a robot that integrates tactile exploration and reinforcement learning to achieve robust throwing 
+            skills for nonrigid objects under the influence of moment of inertia which cause the object to spin in the air. Unlike traditional 
+            sim-to-real transfer methods, our approach involves direct training of the agent
+            on a real hardware robot equipped with a high-resolution tactile sensor, enabling reinforced learning in a realistic and dynamic environment.
+          </p>
+          <p>
+            By leveraging tactile perception, we incorporate pseudo-embeddings of the physical properties of objects into the learning process 
+            through tilting actions at two distinct angles. This tactile information enables the agent to infer and adapt its throwing strategy, 
+            resulting in improved accuracy when handling various objects and targeting distant locations. Furthermore, we demonstrate that the 
+            quality of a grasp significantly impacts the success rate of the throwing task. We evaluate the effectiveness of our method through 
+            extensive experiments, demonstrating superior performance and generalization capabilities in real-world throwing scenarios. We 
+            achieved a success rate of 95% for unseen objects with a mean error of 3.15 cm from the goal.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/r_eNHCHTXDo?si=5m0eh1mcxjjoKgsJ"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Experiment Objects</h2>
+          <p>
+            Using <i>DartBot</i> you can train <b>nonrigid deformable objects</b> to hit a a far away target. To generate a diverse 
+            range of objects with distinct physical properties, we employed small steel balls showcased in the top row, along with 
+            3D printed plastic discs featured in the middle row where black disc has thickness
+          </p>
+          <img src="./static/images/darts.png"
+              class="interpolation-image"
+              alt="Darts Image"/>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Experiment Setup</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              The experimental setup consisted of a UR5e robot arm, a customized parallel gripper equipped with a GelSight Mini sensor, 
+              and a magnetic dartboard. The recycling system consisted of a four-bar linkage mechanism, a guideway, and a reorientation system 
+              to facilitate autonomous training process without human involvement.
+
+            </p>
+            <img src="./static/images/setup.png"
+              class="interpolation-image"
+              alt="Experiment Setup Image"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+
+    <embed src="./static/paper.pdf" width="1000px" height="2100px" />
+
+<footer class="footer">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The template of this website is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">nerfies</a> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
